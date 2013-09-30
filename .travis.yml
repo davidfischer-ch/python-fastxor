@@ -5,7 +5,7 @@ python:
   - "3.2"
   - "3.3"
 install:
-  - sudo apt-get -y install gfortran python-dev
+  - sudo apt-get -y install gfortran python-dev python-numpy
 script:
   - sudo python setup.py test
 matrix:
