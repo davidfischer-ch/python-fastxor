@@ -1,8 +1,8 @@
 Python fastxor extension module
 ===============================
 
-.. image:: https://secure.travis-ci.org/davidfischer-ch/fastxor.png
-    :target: http://travis-ci.org/davidfischer-ch/fastxor
+.. image:: https://secure.travis-ci.org/davidfischer-ch/python-fastxor.png
+    :target: http://travis-ci.org/davidfischer-ch/python-fastxor
 
 Afraid of red status ? Please click on the link, sometimes this is not my fault ;-)
 
