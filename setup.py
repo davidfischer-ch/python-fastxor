@@ -70,7 +70,7 @@ setup(name='fastxor',
       license='EUPL 1.1',
       classifiers=filter(None, classifiers.split('\n')),
       keywords=['xor', 'c++', 'extension'],
-      tests_require=['coverage', 'mock', 'nose', 'numpy', 'pyutils>=v5.1.1-beta'],
-      dependency_links=['git+https://github.com/davidfischer-ch/pyutils.git@v5.1.1-beta#egg=pyutils-v5.1.1-beta'],
+      tests_require=['coverage', 'mock', 'nose', 'numpy', 'pyutils>=v5.1.2-beta'],
+      dependency_links=['git+https://github.com/davidfischer-ch/pyutils.git@v5.1.2-beta#egg=pyutils-v5.1.2-beta'],
       # Thanks to https://github.com/graingert/django-browserid/commit/46c763f11f76b2f3ba365b164196794a37494f44
       test_suite='tests.fastxor_runtests.main')

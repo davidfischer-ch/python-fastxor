@@ -29,7 +29,7 @@ How to install it (Python 2.7) ?
 
 Install some packages that are not handled by pip::
 
-    sudo apt-get install python-dev python-pip
+    sudo apt-get install gfortran python-dev python-pip
 
 Make sure that pip is up-to-date (PIPception)::
 
@@ -45,7 +45,7 @@ How to install it (Python 3.3) ?
 
 Install some packages that are not handled by pip::
 
-    sudo apt-get install python3-dev python3-pip
+    sudo apt-get install gfortran python3-dev python3-pip
 
 Make sure that pip is up-to-date (PIPception)::
 

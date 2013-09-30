@@ -4,6 +4,8 @@ python:
   - "2.7"
   - "3.2"
   - "3.3"
+install:
+  - sudo apt-get -y install gfortran
 script:
   - sudo python setup.py test
 matrix:
