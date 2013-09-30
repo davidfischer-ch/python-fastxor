@@ -53,11 +53,6 @@ Operating System :: Unix
 
 keywords = ['xor', 'c++', 'extension']
 
-install_requires = [
-    'numpy',
-    'pyutils>=v5.0.0-beta'
-]
-
 fastxor = Extension('fastxor',
                     define_macros=[('MAJOR_VERSION', '0'), ('MINOR_VERSION', '1')],
                     include_dirs=['/usr/local/include'],
@@ -76,8 +71,7 @@ setup(name='fastxor',
       license='EUPL 1.1',
       classifiers=filter(None, classifiers.split('\n')),
       keywords=keywords,
-      install_requires=install_requires,
-      tests_require=['coverage', 'mock', 'nose'],
+      tests_require=['coverage', 'mock', 'nose', 'numpy', 'pyutils>v5.0.0-beta'],
       dependency_links=['git+https://github.com/davidfischer-ch/pyutils.git@v5.0.0-beta#egg=pyutils-v5.0.0-beta'],
       # Thanks to https://github.com/graingert/django-browserid/commit/46c763f11f76b2f3ba365b164196794a37494f44
       test_suite='tests.runtests.main')
