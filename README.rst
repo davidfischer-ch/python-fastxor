@@ -6,7 +6,7 @@ Python fastxor extension module
 
 Afraid of red status ? Please click on the link, sometimes this is not my fault ;-)
 
-A C++ fast XOR implementation strongly inspired by `eryksun's stackoverflow post <http://stackoverflow.com/users/205580/eryksun>`_
+A C++ fast XOR implementation strongly inspired by `eryksun's stackoverflow post <http://stackoverflow.com/users/205580/eryksun>`_.
 
 Here are the results on my workplace desktop computer (Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz):
 
