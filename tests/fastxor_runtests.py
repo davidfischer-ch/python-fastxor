@@ -25,7 +25,7 @@
 
 def main():
     from pyutils.unittest import runtests
-    return runtests(__file__, cover_packages=[u'fastxor'], packages=[u'fastxor'], extra_options=['--nocapture'])
+    return runtests(__file__, cover_packages=[u'fastxor'], packages=[u'fastxor', u'tests'], extra_options=['--nocapture'])
 
 if __name__ == u'__main__':
     main()
