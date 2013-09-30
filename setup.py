@@ -51,8 +51,6 @@ Operating System :: MacOS :: MacOS X
 Operating System :: Unix
 """
 
-keywords = ['xor', 'c++', 'extension']
-
 fastxor = Extension('fastxor',
                     define_macros=[('MAJOR_VERSION', '0'), ('MINOR_VERSION', '1')],
                     include_dirs=['/usr/local/include'],
@@ -63,14 +61,15 @@ fastxor = Extension('fastxor',
 setup(name='fastxor',
       version='0.1',
       ext_modules=[fastxor],
-      description="A C++ fast XOR implementation strongly inspired by eryksun's StackOverflow post (http://stackoverflow.com/users/205580/eryksun)",
+      description="A C++ fast XOR implementation strongly inspired by eryksun's StackOverflow post "
+                  "(http://stackoverflow.com/users/205580/eryksun)",
       long_description=open('README.rst', 'r', encoding='utf-8').read(),
       author='David Fischer',
       author_email='david.fischer.ch@gmail.com',
       url='https://github.com/davidfischer-ch/python-fastxor',
       license='EUPL 1.1',
       classifiers=filter(None, classifiers.split('\n')),
-      keywords=keywords,
+      keywords=['xor', 'c++', 'extension'],
       tests_require=['coverage', 'mock', 'nose', 'numpy', 'pyutils>=v5.0.0-beta'],
       dependency_links=['git+https://github.com/davidfischer-ch/pyutils.git@v5.0.0-beta#egg=pyutils-v5.0.0-beta'],
       # Thanks to https://github.com/graingert/django-browserid/commit/46c763f11f76b2f3ba365b164196794a37494f44
