@@ -1,5 +1,5 @@
-SharePics Utils
-===============
+Python fastxor extension module
+===============================
 
 .. image:: https://secure.travis-ci.org/davidfischer-ch/fastxor.png
     :target: http://travis-ci.org/davidfischer-ch/fastxor
