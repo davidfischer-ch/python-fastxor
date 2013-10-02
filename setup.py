@@ -59,7 +59,7 @@ fastxor = Extension('fastxor',
                     sources=['fastxor.cpp'])
 
 setup(name='fastxor',
-      version='0.1',
+      version='0.1.1',
       ext_modules=[fastxor],
       description="A C++ fast XOR implementation strongly inspired by eryksun's StackOverflow post "
                   "(http://stackoverflow.com/users/205580/eryksun)",
