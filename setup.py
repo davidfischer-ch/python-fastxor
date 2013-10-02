@@ -71,6 +71,5 @@ setup(name='fastxor',
       classifiers=filter(None, classifiers.split('\n')),
       keywords=['xor', 'c++', 'extension'],
       tests_require=['coverage', 'mock', 'nose', 'numpy', 'pytoolbox>=v5.1.2-beta'],
-      dependency_links=['git+https://github.com/davidfischer-ch/pytoolbox.git@v5.1.2-beta#egg=pytoolbox-v5.1.2-beta'],
       # Thanks to https://github.com/graingert/django-browserid/commit/46c763f11f76b2f3ba365b164196794a37494f44
       test_suite='tests.fastxor_runtests.main')
