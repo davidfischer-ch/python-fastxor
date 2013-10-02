@@ -22,4 +22,11 @@
 #
 # Retrieved from https://github.com/davidfischer-ch/python-fastxor.git
 
+sudo python2 setup.py test || { echo '[ERROR] Python 2 unit-test of pytoolbox failed'; exit 1; }
+sudo python3 setup.py test || { echo '[ERROR] Python 3 unit-test of pytoolbox failed'; exit 2; }
+version=$(cat setup.py | grep version= | cut -d'=' -f2 | sed "s:',*::g")
+echo "Release version $version, press enter to continue ..."
+read a
+git push || { echo '[ERROR] Unable to push to GitHub'; exit 3; }
+git tag "$version" && git push origin "$version" || { echo '[ERROR] Unable to add release tag'; exit 4; }
 sudo python setup.py register && sudo python setup.py sdist upload

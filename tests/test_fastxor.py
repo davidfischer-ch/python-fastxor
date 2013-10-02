@@ -50,7 +50,7 @@ def numpy_xor(a, b):
 class Test_fastxor(object):
 
     def test_benchmark(self):
-        print(u'\n\nBencharking and testing fast_xor_inplace ...\n')
+        print(u'\n\nBenchmark and test fast_xor_inplace ...\n')
         a1 = bytearray(os.urandom(1024 * 1024 * 2))
         a2, a3, a4 = a1[:], a1[:], a1[:]
         b = bytearray(os.urandom(len(a1)))
