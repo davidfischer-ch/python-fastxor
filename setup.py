@@ -59,7 +59,7 @@ fastxor = Extension('fastxor',
                     sources=['fastxor.cpp'])
 
 setup(name='fastxor',
-      version='0.1.1',
+      version='0.1.3',
       ext_modules=[fastxor],
       description="A C++ fast XOR implementation strongly inspired by eryksun's StackOverflow post "
                   "(http://stackoverflow.com/users/205580/eryksun)",
@@ -70,6 +70,6 @@ setup(name='fastxor',
       license='EUPL 1.1',
       classifiers=filter(None, classifiers.split('\n')),
       keywords=['xor', 'c++', 'extension'],
-      tests_require=['coverage', 'mock', 'nose', 'numpy', 'pytoolbox>=v5.1.2-beta'],
+      tests_require=['coverage', 'mock', 'nose', 'numpy', 'pytoolbox>=v5.1.4-beta'],
       # Thanks to https://github.com/graingert/django-browserid/commit/46c763f11f76b2f3ba365b164196794a37494f44
       test_suite='tests.fastxor_runtests.main')
