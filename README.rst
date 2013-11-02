@@ -1,3 +1,4 @@
+===============================
 Python fastxor extension module
 ===============================
 
@@ -19,11 +20,13 @@ numpy.bitwise_xor        0.00175  252.986
 fastxor.fast_xor_inplace 0.00125  356.339
 ======================== ======= ========
 
+------------------------------------
 What the release number stands for ?
 ------------------------------------
 
 I do my best to follow this interesting recommendation : `Semantic Versioning 2.0.0 <http://semver.org/>`_
 
+--------------------------------
 How to install it (Python 2.7) ?
 --------------------------------
 
@@ -40,6 +43,7 @@ Then, you only need to run ``setup.py``::
     python2 setup.py test
     sudo python2 setup.py install
 
+--------------------------------
 How to install it (Python 3.3) ?
 --------------------------------
 
@@ -58,6 +62,7 @@ Then, you only need to run ``setup.py``::
 
 Sometimes numpy setup fails, just run ``sudo pip-3.3 install numpy`` to solve this.
 
+-----------------------
 How to check coverage ?
 -----------------------
 
@@ -66,6 +71,7 @@ How to check coverage ?
     python setup.py test
     xdg-open tests/cover/index.html
 
+---------------
 How to use it ?
 ---------------
 
